@@ -17,3 +17,15 @@
 课程视频: https://www.bilibili.com/video/BV1zW5yz1Eom/?spm_id_from=333.337.search-card.all.click
 
 课件地址: https://stanford-cs336.github.io/spring2025/
+
+
+
+### 进度
+
+1. Overview, tokenization [✓]
+2. PyTorch, resource accounting [ing]
+3. Architectures, hyperparameters [ ]
+4. Mixture of experts [ ]
+5. GPUs [ ]
+6. Kernels, Triton [ ]
+7. 
