@@ -20,12 +20,33 @@
 
 
 
-### 进度
+### Lectures
 
 1. Overview, tokenization [✓]
-2. PyTorch, resource accounting [ing]
+2. PyTorch, resource accounting [0:44]
 3. Architectures, hyperparameters [ ]
 4. Mixture of experts [ ]
 5. GPUs [ ]
 6. Kernels, Triton [ ]
-7. 
+7. Parallelism [ ]
+8. Parallelism [ ]
+9. Scaling laws [ ]
+10. Inference [ ]
+11. Scaling laws [ ]
+12. Evaluation [ ]
+13. Data [ ]
+14. Data [ ]
+15. Alignment - SFT/RLHF [ ]
+16. Alignment - RL [ ]
+17. Alignment - RL [ ]
+
+
+
+### Assignments
+
+1. Assignment 1 [ ]
+2. Assignment 2 [ ]
+3. Assignment 3 [ ]
+4. Assignment 4 [ ]
+5. Assignment 5 [ ]
+
