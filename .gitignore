@@ -1,0 +1,37 @@
+# C# compiled output directories
+[Bb]in/
+[Oo]bj/
+[Rr]elease/
+[Dd]ebug/
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.vspscc
+*.vssscc
+*.bak
+*.scc
+
+# NuGet packages
+packages/
+*.nupkg
+
+# Other common build / runtime files
+# *.exe
+# *.dll
+# *.pdb
+*.cache
+
+# Backup files
+*.cs_bk # 忽略 .cs_bk 文件
+
+# Python generated files
+__pycache__/
+*.pyc
+*.pyd
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.coverage
