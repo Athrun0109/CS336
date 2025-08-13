@@ -39,7 +39,7 @@
   ```python
   x = torch.randn(2, 3)
   y = torch.randn(3, 2)
-  x @ y
+  l = x @ y
   '''
   输出shape为(2, 2)，因此总共有4次运算
   每次运算包含3个元素，由乘、加组成
@@ -49,3 +49,33 @@
 
   <img src="1.jpg" alt="1" style="zoom: 33%;" />
 
+- 反向传播计算量
+
+  ```python
+  x = torch.randn(2, 3)
+  y = torch.randn(3, 2)
+  l = x @ y
+  '''
+  l.shape = (2, 2)
+  dl/dx = dl @ y.grad.T # 2 * (2 * 2 * 3)
+  dl/dy = x.grad.T @ dl # 2 * (3 * 2 * 2)
+  因此FLOPs = 2 * 2 * (2 * 2 * 3)
+  总结来说就是反向传播FLOPs为两倍的正向传播计算量
+  '''
+  ```
+
+- ```python
+  x = nn.Parameter(torch.randn(num_in))
+  w = nn.Parameter(torch.randn(num_in, hidden_dim)) / np.sqrt(num_in)
+  out = x @ w
+  ```
+
+  为什么w初始化要除以num_in**0.5?
+
+  为了使得梯度不会消失/爆炸，所以`var(out) == var(x)`
+
+  <img src="2.jpg" alt="2" style="zoom:33%;" />
+
+  因此开根号的本质原因是因为计算方差时候(x-μ)**2，求了一个平方数。
+
+- 

@@ -23,7 +23,7 @@
 ### Lectures
 
 1. Overview, tokenization [✓]
-2. PyTorch, resource accounting [0:44]
+2. PyTorch, resource accounting [✓]
 3. Architectures, hyperparameters [ ]
 4. Mixture of experts [ ]
 5. GPUs [ ]
