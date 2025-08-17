@@ -52,3 +52,7 @@
   \text{GELU}(x)\approx0.5\cdot{x}\cdot(1+\text{tanh}[\sqrt{\frac{2}{\pi}}({x}+0.044715 \cdot{x^3})])
   $$
   GELU(gate)建议直接套用`F.gelu(gate)`实现
+
+
+
+- transformer中间隐藏层的维度似乎是模型输入x维度的2.6倍或4倍比较合理。
