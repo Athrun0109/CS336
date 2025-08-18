@@ -55,4 +55,25 @@
 
 
 
-- transformer中间隐藏层的维度似乎是模型输入x维度的2.6倍或4倍比较合理。
+- transformer中间隐藏层的维度似乎是模型输入x维度的4倍比较合理。使用GLUs激活函数的情况下这个值为8/3。
+- transformer中head的维度一般遵循：Head_dim * Num_head = D，这里的D是指模型输入x维度。
+- 模型的宽度（最后一维的大小）/模型层数（模型深度）比叫做aspect ratio；一般这个比值是100~156左右，宽远远大于深度。
+- **weight decay**；主要是指学习率的衰减。现在主流模型都使用cosine LR decay。此外现在模型越来越少用Dropout层了。
+
+- **RoPE: rotary position embeddings**
+  本质上是一种位置编码的方式。参考[视频链接](https://www.youtube.com/watch?v=o29P0Kpobz0&t=351s) 将单词在句子中的位置通过旋转来表示，比如第m个单词，那么就让该单词旋转mθ度，θ是一个人为定义的单位
+  $$
+  \theta_j=10000^{-\frac{2j}{d}}
+  $$
+  其中j取值范围为[0, d//2-1]，d为embedding后的维度。
+  让KQV中的KQ都乘以mθ度的旋转矩阵
+  $$
+  ROT(m\theta)=\left(\begin{matrix}
+     cos(m\theta) & -sin(m\theta) \\
+     sin(m\theta) & cos(m\theta) \\
+    \end{matrix}\right)
+  $$
+  实现代码查看`code.py`
+
+- **z-loss**
+  ...
