@@ -76,4 +76,14 @@
   实现代码查看`code.py`
 
 - **z-loss**
-  ...
+  softmax的一个弱点是它只关注相对大小而忽视绝对大小。比如z1 = [10, 1, 1]与z2 = [1010, 1001, 1001]的softmax结果是一样的。训练中可能出现logits的值非常大，而没有什么约束机制，可能造成数值溢出、梯度太大等问题。z-loss对 logit 的大小进行直接惩罚。
+  z-loss就是在传统crossentropy_loss基础上加上一个z_loss项
+  $$
+  L\_{\text{total}} = L\_{\text{cross\_entropy}} + L\_{z}
+  $$
+  其中
+  $$
+  L\_{z} = \alpha\cdot(log{Z})^2
+  $$
+  
+
