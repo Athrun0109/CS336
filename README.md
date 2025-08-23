@@ -25,7 +25,7 @@
 1. Overview, tokenization [✓]
 2. PyTorch, resource accounting [✓]
 3. Architectures, hyperparameters [✓]
-4. Mixture of experts [0:46]
+4. Mixture of experts [1:05]
 5. GPUs [ ]
 6. Kernels, Triton [ ]
 7. Parallelism [ ]
