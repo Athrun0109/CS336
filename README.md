@@ -25,7 +25,7 @@
 1. Overview, tokenization [✓]
 2. PyTorch, resource accounting [✓]
 3. Architectures, hyperparameters [✓]
-4. Mixture of experts [1:05]
+4. Mixture of experts [✓]
 5. GPUs [ ]
 6. Kernels, Triton [ ]
 7. Parallelism [ ]
@@ -45,6 +45,7 @@
 ### Assignments
 
 1. Assignment 1 [ ]
+   https://github.com/Athrun0109/CS336_assignment1.git
 2. Assignment 2 [ ]
 3. Assignment 3 [ ]
 4. Assignment 4 [ ]
