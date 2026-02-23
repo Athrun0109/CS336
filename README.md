@@ -26,7 +26,7 @@
 2. PyTorch, resource accounting [✓]
 3. Architectures, hyperparameters [✓]
 4. Mixture of experts [✓]
-5. GPUs [24:00]
+5. GPUs [42:00]
 6. Kernels, Triton [ ]
 7. Parallelism [ ]
 8. Parallelism [ ]
