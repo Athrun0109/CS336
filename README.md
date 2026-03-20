@@ -28,7 +28,7 @@
 4. Mixture of experts [✓]
 5. GPUs [✓]
 6. Kernels, Triton [✓]
-7. Parallelism [00:55]
+7. Parallelism [✓]
 8. Parallelism [ ]
 9. Scaling laws [ ]
 10. Inference [ ]
