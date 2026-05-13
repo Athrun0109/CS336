@@ -30,8 +30,8 @@
 6. Kernels, Triton [✓]
 7. Parallelism [✓]
 8. Parallelism [✓]
-9. Scaling laws [00:35]
-10. Inference [ ]
+9. Scaling laws [✓]
+10. Inference [1:07]
 11. Scaling laws [ ]
 12. Evaluation [ ]
 13. Data [ ]
@@ -49,6 +49,7 @@
    https://github.com/Athrun0109/CS336_assignment1.git
 
 2. Assignment 2 [ ]
+   https://github.com/Athrun0109/CS336_assignment2.git
 
 3. Assignment 3 [ ]
 
