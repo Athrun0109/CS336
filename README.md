@@ -31,7 +31,7 @@
 7. Parallelism [✓]
 8. Parallelism [✓]
 9. Scaling laws [✓]
-10. Inference [1:07]
+10. Inference [✓]
 11. Scaling laws [ ]
 12. Evaluation [ ]
 13. Data [ ]
